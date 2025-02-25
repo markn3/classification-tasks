@@ -1,2 +1,4 @@
+Flask
 tensorflow
-matplotlib
+numpy
+Pillow
