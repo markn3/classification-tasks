@@ -28,6 +28,6 @@ def main():
     model.fit(x_train, y_train, epochs=5, validation_data=(x_test,y_test))
 
     model.save('mnist_model.keras')
-    print("Model saved to mnist_model.h5")
+    print("Model saved to mnist_model.keras")
 if __name__ =="__main__":
     main()
