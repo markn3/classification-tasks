@@ -9,7 +9,7 @@ from PIL import Image
 app = Flask(__name__)
 
 # Load the model (make sure mnist_model.h5 is in the same directory)
-model = load_model("mnist_model.h5")
+model = tf.keras.models.load_model("mnist_model.keras")
 
 def prepare_image(image, target_size=(28, 28)):
     # Convert to grayscale if not already

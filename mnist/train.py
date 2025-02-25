@@ -27,7 +27,7 @@ def main():
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     model.fit(x_train, y_train, epochs=5, validation_data=(x_test,y_test))
 
-    model.save("mnist_model.h5")
+    model.save('mnist_model.keras')
     print("Model saved to mnist_model.h5")
 if __name__ =="__main__":
     main()
